@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Lucas R. Marques</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="./js/main.js"></script>
-  </head>
-  <body>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Movie Catalog</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script src="./js/app.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <img class="photo" src="img/lucas-marques.jpg" alt="A photo of Lucas Marques">
+    <h1 id="title"> Movie Catalog </h1>
+  </header>
+  <section>
     <header>
-      <img class="photo" src="img/lucas-marques.jpg" alt="A photo of Lucas Marques">
-      <h1 id="title"> Lucas R. Marques </h1>
+      <h2 class="subtitle">Movies</h2>
     </header>
-    <section>
+    <article class="post">
       <header>
-        <h2 class="subtitle">Posts</h2>
+        <h3 class="post_title">Top Popular Movies (TMDB)</h3>
       </header>
-      <article class="post">
-        <header>
-          <h3 class="post_title">Post #1</h3>
-          <img id="post_thumbnail" src="img/post-1-thumbnail.jpg" alt="UX and UI design" class="post_thumbnail" onmouseover="enlargeImage(this)" onmouseout="reduceImage(this)">
-        </header>
-        <p class="post_content">
-          Lorem ipsum dolor sit amet, <a href="https://www.google.com" target="_blank">consectetur</a> adipiscing elit. 
-          Donec sit amet sem a nunc tempus aliquet et id lacus. 
-          Vivamus porttitor luctus nunc, ac pellentesque sem molestie 
-          euismod. <a href="mailto:google@gmail.com">Vivamus molestie</a> risus sed lacinia egestas, turpis 
-          nisi condimentum justo, rutrum molestie augue odio ac erat. 
-          Aliquam ac erat sodales, dapibus elit eget, sollicitudin nisl. 
-          Nam et sollicitudin sapien, non ultricies elit. Praesent rutrum 
-          rat a est porta dictum. Quisque sit amet mi ante. Donec vulputate
-          nisl ac convallis volutpat. Suspendisse sagittis nunc in eros 
-          congue placerat. Aenean dictum orci vel elit volutpat egestas.
-        </p>
-      </article>
-    </section>
-    <footer>
-      <ul class="contact_list">
-        <li><a href="mailto:lucas@marques.com">lucas@marques.com</a></li>
-        <li><a href="https://www.linkedin.com/in/lucas-marques-926bb0128/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/sagnax/introweb-html5-css3" target="_blank">GitHub</a></li>
-      </ul>
-    </footer>
-  </body>
+      <section class="post_content">
+        <div id="movies" class="movies_grid"></div>
+      </section>
+    </article>
+  </section>
+  <footer>
+    <ul class="contact_list">
+      <li><a href="mailto:lucas@marques.com">lucas@marques.com</a></li>
+      <li><a href="https://www.linkedin.com/in/lucas-marques-926bb0128/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/sagnax/introweb-html5-css3" target="_blank">GitHub</a></li>
+    </ul>
+  </footer>
+</body>
+
 </html>
